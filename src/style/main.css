@@ -1,0 +1,113 @@
+@import url(style.css);
+
+/* import - подключение css файла */
+
+.s-main {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.s-main-about {
+    background: rgb(208, 122, 175);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 200px;
+}
+
+.s-main-about__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.s-main-about__subtitle {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.s-main-auth {
+    background: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-main-auth-login, .s-main-auth-register {
+    display: none;
+    padding: 20px;
+}
+
+.s-main-auth-login--active, .s-main-auth-register--active {
+    display: block;
+}
+
+.s-main-auth-login__title, .s-main-auth-register__title {
+    text-align: left;
+    font-size: 24px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-form__group {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+.main-form__label {
+    margin-bottom: 8px;
+}
+
+.main-form__input {
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px;
+    outline: none;
+    box-shadow: 0 2px 15px 1px rgba(0,0,0,0.15);
+}
+
+.main-form__input:focus {
+    border: 2px solid rgb(141, 141, 255);
+}
+
+.main-form__submit {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(0, 209, 42);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 2px 15px 1px rgba(0,0,0,0.15);
+}
+
+.main-form__change {
+    margin-top: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 690px) {
+    .s-main {
+        min-height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .s-main-about {
+        display: none;
+    } */
+}
