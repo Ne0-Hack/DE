@@ -1,0 +1,102 @@
+@import "style.css";
+
+
+.s-user {
+    margin-top: 50px;
+}
+
+.s-user__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.s-user-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.s-user-info__item {
+    font-size: 18px;
+}
+
+.s-user-info__item span {
+    font-weight: 700;
+}
+
+.s-request {
+    margin-top: 20px;
+}
+
+.s-request__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.s-request-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.s-request-wrapper-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.25);
+}
+
+.s-request-wrapper-item--add {
+    cursor: pointer;
+}
+
+.s-request-wrapper-item--add .s-request-wrapper-item__title {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(96, 96, 255);
+}
+
+.s-request-wrapper-item__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.s-request-wrapper-item__group {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.s-request-wrapper-item__select {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.s-request-wrapper-item__select select {
+    width: 200px; 
+    border: none;
+    background: #EFEFEF;  
+    padding: 6px 0;
+}
+
+.s-request-wrapper-item__btn {
+    border: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.s-request-wrapper-item__btn-more {
+    background: rgb(96, 96, 255);
+    color: #ffffff;
+}
